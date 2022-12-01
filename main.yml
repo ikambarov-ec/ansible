@@ -1,0 +1,52 @@
+- name: Install Apache
+  hosts: localhost
+  vars:
+    id: ""
+    ssh: ""
+
+  tasks:
+  - name: Check Inputs
+    fail:
+      msg: Inputs Not Provided
+    when: id == "" or ssh == ""
+
+  - name: Task #1
+    debug:
+      msg: "Pass"
+
+  - name: Task #2
+    debug:
+      msg: "Fail"
+
+  - name: Task #3
+    debug:
+      msg: "Pass"
+
+  - name: Task #4
+    debug:
+      msg: "Pass"
+
+  - name: Task #5
+    debug:
+      msg: "Pass"
+
+  - name: Task #6
+    debug:
+      msg: "Fail"
+
+  - name: Task #7
+    debug:
+      msg: "Pass"
+
+  - name: Task #8
+    debug:
+      msg: "Pass"
+
+  - name: Task #9
+    debug:
+      msg: "Fail"
+
+  - name: Task #10
+    debug:
+      msg: "Pass"
+
